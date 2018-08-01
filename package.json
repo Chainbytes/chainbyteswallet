@@ -1,15 +1,16 @@
 {
   "name": "chainbyteswallet",
-  "version": "0.1.9",
+  "version": "0.1.11",
   "description": "Simple Standalone Bitcoin Wallet",
   "main": "index.js",
   "scripts": {
     "start": "node ./src/wallet.js",
     "test": "mocha"
   },
+  "homepage": "http://chainbytes.com",
   "repository": {
     "type": "git",
-    "url": "git://github.com/hitsnorth/chainbyteswallet.git"
+    "url": "git://github.com/chainbytes/chainbyteswallet.git"
   },
   "keywords": [
     "bitcoin",

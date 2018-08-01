@@ -136,6 +136,6 @@ module.exports = {
     calculateFee: calcFee,     // feeType low,medium,high
     pushPayment: pushPay,  // send payment to multiple payees with usd amount, also has opcode support for "comments"
     sendPayment: sendPay,
-    getAccount: getAccount
+    getAccount: getAccount  // Get transaction information and balance for address
 };
 
