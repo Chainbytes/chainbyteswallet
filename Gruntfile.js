@@ -5,11 +5,11 @@ module.exports = (grunt) => {
         publish: {
             main: {
                 src: [
-                    'test/wallettest.js',
+                    'test/wallettest.js'
                 ]
             },
             regex: {
-                src: ['src/**/*', 'test/**/*'],
+                src: ['src/**/*', 'test/**/*']
             }
         },
         bump: {
@@ -20,9 +20,9 @@ module.exports = (grunt) => {
                 pushTo: 'origin',
                 updateConfigs: ['pkg']
             }
-        },
+        }
     });
     grunt.loadNpmTasks('grunt-bump');
     grunt.loadNpmTasks('grunt-release');
     grunt.registerTask('default', ['release']);
-}
+};
