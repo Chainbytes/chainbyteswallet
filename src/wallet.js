@@ -117,6 +117,7 @@ let getAddress = () => {
 let sendPay = (recipient, amount, wif, opcode) => {
     return new Promise((fulfill, reject) => {
         const data = new Buffer(opcode);
+        reject("Not yet implemented");
     });
 }
 let getAccount = (bitcoinAddress) => {

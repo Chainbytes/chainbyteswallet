@@ -6,7 +6,7 @@
 [![Gitter](https://img.shields.io/badge/gitter-join_chat-blue.svg?style=flat-square)](https://gitter.im/chainbyteswallet)
 
 
-Simple Standalone Wallet
+# Simple Standalone Wallet
 
 ## Installation
 
@@ -36,10 +36,13 @@ wallet.getAccount(payee[0].wallet).then((result) => {
 ```
 
 ## Tests
-// Mocha tests
+### Mocha tests
 ```
 npm test
 ```
+## Contributing
+
+Please read [CONTRIBUTING.md](https://github.com/chainbytes/chainbyteswallet/blob/master/contributing.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 <!-- Markdown link & img dfn's -->
 [npm-image]: https://img.shields.io/npm/v/chainbyteswallet.svg?style=flat-square
