@@ -121,7 +121,7 @@ const getAddress = () => {
 
 const sendPay = (recipient, amount, wif, opcode) => {
     return new Promise((fulfill, reject) => {
-        const data = new Buffer(opcode);
+        const data = Buffer.from(opcode);
         reject('Not yet implemented');
     });
 };
