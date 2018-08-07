@@ -5,10 +5,9 @@ const payee = [
   { name: 'Person1', wallet: '1983LDmpGo1iBjz9AAqNEStcaGiya8Wx8N', amount: 66.67 },
   { name: 'Person2', wallet: '17J1VUivqLNzw89k5aEfZz3rBk9Pg7hWyY', amount: 66.67 },
 ]
-const should = require('chai').should(),
-  wallet = require('../src/wallet.js'),
-  newAddress = wallet.getNewAddress()
-console.log(newAddress)
+const should = require('chai').should()
+const wallet = require('../src/wallet.js')
+const newAddress = wallet.getNewAddress()
 
 describe('Wallet', function() {
   describe('#getNewAddress', () => {
