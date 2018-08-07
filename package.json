@@ -26,8 +26,7 @@
     "bitcoinjs-lib": "^3.0.3",
     "blockchain.info": "^2.8.0",
     "dotenv": "^6.0.0",
-    "request": "^2.81.0",
-    "winston": "^3.0.0"
+    "request": "^2.81.0"
   },
   "engines": {
     "node": ">=7.6"
@@ -38,6 +37,6 @@
     "grunt-bump": "^0.8.0",
     "grunt-publish": "^1.0.0",
     "grunt-release": "^0.14.0",
-    "mocha": "^3.4.2"
+    "mocha": "^5.2.0"
   }
 }
