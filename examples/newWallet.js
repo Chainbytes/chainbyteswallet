@@ -1,20 +1,22 @@
-const bitcoin = require('bitcoinjs-lib'), apiCall = require("../src/apiCall.js");
-const walletService = require('../src/wallet.js');
-const pushtx = require('blockchain.info/pushtx');
-const messageToSend = "chainbytes: { action: 'create' }";
-const data = new Buffer(messageToSend);
-const wallet =
-    {
-        address: '1AjaQ4erWV3ae3PHNrnennp4FqUF6JA6FN',
-        wif: 'L4W5rAyW5oJd1ygk8RS9iPUJVoP1wcBP7g9vJ4wsGbDiSTUgriDw'
-    };
-let query = "https://blockchain.info/address/" + wallet.address + "?format=json";
-const logger = require('winston');
-logger.level = "debug";
-const payee = [{"name": "Person1", "wallet": "1MGjwYmN66XPptX2rCuxaMSKWDkgCTS1R3", "amount": 1},
-    {"name": "Person2", "wallet": "1MGjwYmN66XPptX2rCuxaMSKWDkgCTS1R3", "amount": 1}]
+const bitcoin = require('bitcoinjs-lib'),
+  apiCall = require('../src/apiCall.js')
+const walletService = require('../src/wallet.js')
+const pushtx = require('blockchain.info/pushtx')
+const messageToSend = "chainbytes: { action: 'create' }"
+const data = new Buffer(messageToSend)
+const wallet = {
+  address: '1AjaQ4erWV3ae3PHNrnennp4FqUF6JA6FN',
+  wif: 'L4W5rAyW5oJd1ygk8RS9iPUJVoP1wcBP7g9vJ4wsGbDiSTUgriDw',
+}
+let query = 'https://blockchain.info/address/' + wallet.address + '?format=json'
+const logger = require('winston')
+logger.level = 'debug'
+const payee = [
+  { name: 'Person1', wallet: '1MGjwYmN66XPptX2rCuxaMSKWDkgCTS1R3', amount: 1 },
+  { name: 'Person2', wallet: '1MGjwYmN66XPptX2rCuxaMSKWDkgCTS1R3', amount: 1 },
+]
 
-console.log(walletService.getAccount(wallet.address));
+console.log(walletService.getAccount(wallet.address))
 /*walletService.pushPayment(payee, wallet, "Make it so").then((result) => {
     console.log(result);
 }).catch((err) => {
@@ -67,6 +69,3 @@ console.log(walletService.getAccount(wallet.address));
         }
     });
 });*/
-
-
-
