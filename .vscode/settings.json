@@ -1,0 +1,9 @@
+{
+    "prettier.printWidth": 140,
+    "prettier.semi": false,
+    "prettier.singleQuote": true,
+    "prettier.tabWidth": 2,
+    "prettier.trailingComma": "all",
+    "prettier.useTabs": false,
+    "files.eol": "\r\n"
+}

@@ -1,8 +1,4 @@
-'use strict'
-const wallet = require("./src/wallet.js");
-const apiCall = require("./src/apiCall.js");
-module.exports = wallet;
+const wallet = require('./src/wallet.js')
+const apiCall = require('./src/apiCall.js')
 
-
-
-
+module.exports = wallet
