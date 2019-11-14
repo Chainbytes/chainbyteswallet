@@ -1,6 +1,6 @@
 {
   "name": "chainbyteswallet",
-  "version": "0.1.17",
+  "version": "0.1.18",
   "description": "Simple Standalone Bitcoin Wallet",
   "main": "index.js",
   "scripts": {
@@ -23,10 +23,10 @@
   "author": "Eric Grill",
   "license": "GPL-3.0",
   "dependencies": {
-    "bitcoinjs-lib": "^3.0.3",
-    "blockchain.info": "^2.8.0",
+    "bitcoinjs-lib": "^5.1.6",
+    "blockchain.info": "^2.12.1",
     "dot-env": "0.0.1",
-    "request": "^2.81.0",
+    "request": "^2.88.0",
     "winston": "^2.3.1"
   },
   "engines": {
