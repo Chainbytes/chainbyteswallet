@@ -16,7 +16,7 @@ const calcFee = async(Transaction, feeType) => {
 
     const feeData = await apiCall.getData(query);
     const feeBase = feeData[feeType] || feeData.low || 0;
-    
+
     if (size * feeBase < 20000) {  // Minimum relay fee
         return 20000;
     }
@@ -129,13 +129,17 @@ const sendPay = (recipient, amount, wif, opcode) => {
 const getAccount = (bitcoinAddress) => {
     return blockexplorer.getAddress(bitcoinAddress);
 };
-
+const getNewPublic = (wif) => {
+    const key = bitcoin.ECPair.fromWIF(wif); // TODO: Support other private keys
+    return key.publicKey;
+}
 module.exports = {
     getNewAddress: getAddress, // get new address and wif for wallet
     calculateSize: calcSize, // Get size of Transaction
     calculateFee: calcFee, // feeType low,medium,high
     pushPayment: pushPay, // send payment to multiple payees with usd amount, also has opcode support for 'comments'
     sendPayment: sendPay,
-    getAccount: getAccount // Get transaction information and balance for address
+    getAccount: getAccount, // Get transaction information and balance for address
+    getNewPublic: getNewPublic, //  Get New public address based on wif
 };
 
