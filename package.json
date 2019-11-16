@@ -1,10 +1,11 @@
 {
   "name": "chainbyteswallet",
-  "version": "0.1.18",
+  "version": "0.1.19",
   "description": "Simple Standalone Bitcoin Wallet",
   "main": "index.js",
   "scripts": {
     "start": "node ./src/wallet.js",
+    "sendtest": "nodemon ./examples/simpleSend.js",
     "test": "mocha"
   },
   "homepage": "http://chainbytes.com",
