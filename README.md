@@ -5,6 +5,7 @@
 [![Downloads Stats][npm-downloads]][npm-url]
 [![Gitter](https://img.shields.io/badge/gitter-join_chat-blue.svg?style=flat-square)](https://gitter.im/chainbyteswallet)
 
+Created by ChainBytes team. ChainBytes is a software and hardware development company , developing blockchain software solutions and Bitcoin ATM kiosks. If you need a more personalized wallet white-labeled for your brand or additional coins support you can contact us via: www.chainbytes.com 
 
 # Simple Standalone Wallet
 
